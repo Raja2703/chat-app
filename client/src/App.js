@@ -26,6 +26,7 @@ function App() {
 	} else {
 		return (
 			<div className="w-screen h-screen flex flex-col justify-center items-center">
+				{/* css background */}
 				<div class="area flex items-center justify-center">
 					<ul class="z-0 circles">
 						<li></li>
@@ -39,6 +40,8 @@ function App() {
 						<li></li>
 						<li></li>
 					</ul>
+					{/* css background ends here */}
+
 					<div className="z-10 border border-indigo-900 h-1/6 flex flex-col justify-center px-10 py-20 rounded-md">
 						<h3 className="text-center text-xl text-white">Join a chat</h3>
 						<div className="mb-4 mt-2">

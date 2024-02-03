@@ -4,10 +4,7 @@ import './index.css';
 
 const Chat = ({ socket, name, roomId }) => {
 	const [currentMessage, setCurrentMessage] = useState('');
-	const [messages, setMessages] = useState([
-		// { roomId: 1, author: 'raja', message: "Hello i'm raja", time: '11:12' },
-		// { roomId: 1, author: 'dhanush', message: "Hello i'm raja,I'm from avadi and currently living in pondy", time: '11:22' },
-	]);
+	const [messages, setMessages] = useState([]);
 
 	const sendMessage = async () => {
 		if (currentMessage.trim() !== '') {
@@ -35,6 +32,7 @@ const Chat = ({ socket, name, roomId }) => {
 	const you = 'mr-4 mt-2 self-end w-max max-w-sm px-4 py-1 rounded-t-xl rounded-bl-xl bg-gradient-to-r from-blue-400 to-blue-600 text-white';
 
 	return (
+		// css background starts here
 		<div class="area">
 			<ul class="circles">
 				<li></li>
@@ -48,6 +46,8 @@ const Chat = ({ socket, name, roomId }) => {
 				<li></li>
 				<li></li>
 			</ul>
+			{/* css background ends here */}
+
 			<div className="w-screen flex flex-col h-screen items-center backdrop-blur-sm">
 				{/* header */}
 				<div>
