@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ScrollToBottom from 'react-scroll-to-bottom';
 import './index.css';
 
 const Chat = ({ socket, name, roomId }) => {
